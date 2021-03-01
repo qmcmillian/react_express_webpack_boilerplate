@@ -1,0 +1,40 @@
+{
+  "name": "react-express-webpak-boilerplate",
+  "version": "1.0.0",
+  "description": "Basic application boiler plate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "server": "nodemon server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qmcmillian/React-Express-Webpak-BoilerPlate.git"
+  },
+  "author": "Quentin McMillian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qmcmillian/React-Express-Webpak-BoilerPlate/issues"
+  },
+  "homepage": "https://github.com/qmcmillian/React-Express-Webpak-BoilerPlate#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7",
+    "path": "^0.12.7",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "serve-static": "^1.14.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.13.8",
+    "@babel/preset-env": "^7.13.8",
+    "@babel/preset-react": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
