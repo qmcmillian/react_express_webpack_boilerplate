@@ -21,9 +21,32 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             'presets': ['@babel/preset-env', '@babel/preset-react'],
-            // 'plugins': ['babel-plugin-styled-components']
           }
         }
+      },
+      {
+        test: /\.(css|scss)$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+              modules: {
+                localIdentName: "[name]__[local]___[hash:base64:5]",
+              },
+            }
+          }
+        ],
+        include: /\.module\.css$/
+      },
+      {
+        test: /\.(css|scss)$/,
+        use: [
+          'style-loader',
+          'css-loader'
+        ],
+        exclude: /\.module\.css$/
       },
       {
         test: /\.(png|jpg|gif)$/i,

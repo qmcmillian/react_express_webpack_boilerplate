@@ -5,7 +5,7 @@ const morgan = require('morgan');
 const app = express();
 
 
-// // Server static index.html file
+// Serves static index.html file
 app.use(express.static('public'));
 
 // Middleware
