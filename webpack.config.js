@@ -1,6 +1,6 @@
 var path = require('path');
 
-var ENTRY_PATH= path.join(__dirname, 'src/client/index.jsx');
+var ENTRY_PATH= path.join(__dirname, 'src/index.jsx');
 var OUT_PATH= path.join(__dirname, 'public');
 
 module.exports = {
